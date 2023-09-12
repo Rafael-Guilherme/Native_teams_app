@@ -1,4 +1,4 @@
-import { BackButton, Container, Logo } from './styles'
+import { BackButton, BackIcon, Container, Logo } from './styles'
 
 import logoImg from '@assets/logo.png'
 
@@ -11,7 +11,7 @@ export function Header({ showBackButton = false }:Props) {
         <Container>
             {showBackButton && 
                 <BackButton>
-                    Voltar
+                    <BackIcon />
                 </BackButton>
             }
             

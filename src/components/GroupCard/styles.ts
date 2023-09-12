@@ -1,6 +1,6 @@
 import { Pressable } from 'react-native'
 import styled from 'styled-components/native'
-//import { UsersThree } from 'phosphor-react-native'
+import { UsersThree } from 'phosphor-react-native'
 
 export const Container = styled(Pressable)`
     width: 100%;
@@ -19,10 +19,10 @@ export const Title = styled.Text`
     font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 `
 
-// export const UserIcon = styled(UsersThree).attrs(({ theme }) => ({
-//     size: 32,
-//     color: theme.COLORS.GREEN_700,
-//     weight: 'fill',
-// }))`
-//     margin-right: 20px;
-// `
+export const UserIcon = styled(UsersThree).attrs(({ theme }) => ({
+    size: 32,
+    color: theme.COLORS.GREEN_700,
+    weight: 'fill',
+}))`
+    margin-right: 20px;
+`
