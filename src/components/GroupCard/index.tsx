@@ -1,5 +1,5 @@
 import { PressableProps } from 'react-native'
-import { Container, Title } from './styles'
+import { Container, Title, UserIcon } from './styles'
 
 type Props = PressableProps & {
     title: string
@@ -8,6 +8,8 @@ type Props = PressableProps & {
 export function GroupCard({ title, ...rest }: Props) {
     return (
         <Container {...rest}>
+            <UserIcon />
+
             <Title>
                 {title}
             </Title>
