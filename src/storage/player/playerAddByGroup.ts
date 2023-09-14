@@ -11,7 +11,7 @@ export async function playerAddByGroup(newPlayer: PlayerStorageDTO, group: strin
 
         const playerAlreadyExists = storagePlayers.filter(player => player.name === newPlayer.name)
 
-        if (playerAddByGroup.length > 0) {
+        if (playerAlreadyExists.length > 0) {
             throw new AppError('Essa pessoa já está adicionada em um time aqui') 
         }
 
